@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    background-color:darkturquoise;
+}
+
+.w50{
+    width: 50%;
+}
+
+div a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+nav{
+    text-align: right;
+}
+
+nav a{
+    margin: 0 10px;
+}
+
+/*Evento ao passar o mouse*/
+nav a:hover{
+    color: white;
+}
+
+section.banner{
+    background-color:whitesmoke;
+    height: 400px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+section.titulos{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.w33{
+    width: 33.3%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: darkturquoise;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    header, nav{
+        text-align: center;
+    }
+
+    .w50, .w33{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header, nav{
+        text-align: center;
+    }
+
+    .w50, .w33{
+        width: 100%;
+    }
+
+    section.banner{
+        height: 200px;
+    }
+}
